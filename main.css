@@ -1,27 +1,109 @@
-/* TASK 60 */
-
-.banner {
-  background: #f80031;
-  width: 400px;
-  border-radius: 14px;
-  padding: 5px;
+/* TASK 61 */
+* {
+  /* outline: 1px solid pink; */
+}
+.aside {
+  margin: auto;
+  width: fit-content;
+}
+.list_menu {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 20px;
+  width: 230px;
 }
 
-.banner__inner {
-  background: #f80031;
-  border-radius: 10px;
-  padding: 15px;
-  border: 2px dashed white;
+.list_menu__header {
+  color: #207856;
+  font-weight: 200;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+  position: relative;
+}
+.list_menu__header::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #207856;
+  position: absolute;
+  top: 8px;
+  left: -20px;
 }
 
-.banner__p {
-  text-align: center;
-  font-size: 1.4rem;
-  color: #fff;
-  text-shadow: black -1px -1px 2px;
+/* NETLENKA*************************************************************************** */
+.netlenka {
+  position: relative;
 }
-
-.banner__span {
+.netlenka::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 100%;
+  background: #207856;
+  position: absolute;
+  left: -20px;
+}
+.list_netlenka {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list_netlenka__item {
+  margin: 6px 0;
+}
+.list_netlenka__link {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #e35b22;
+}
+.list_netlenka__link:hover {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.95rem;
+  text-decoration: underline;
+  color: #e35b22;
+}
+.list_netlenka__author {
   color: #000;
-  background: #f8965a;
+  margin: 0;
+  padding: 0;
+}
+
+/* list_inner************************************************************************************************ */
+
+.list_inner {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list_inner__item:first-of-type {
+  margin-top: -10px;
+}
+.list_inner__link {
+  font-size: 0.9rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+
+.list_inner__link:hover {
+  text-decoration: underline;
+}
+
+/* partners******************************************************** */
+
+.partners {
+  background: #000;
+  padding: 5px 10px;
+}
+.partners__header {
+  color: #fff;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
