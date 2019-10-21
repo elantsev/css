@@ -1,45 +1,96 @@
-* {
-  box-sizing: border-box;
-}
 .container {
+  background: #e04c3e;
+  color: #fff;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding-top: 50px;
+  background-image: url("https://refactoring.guru/images/content-public/windmill-ugly.svg"),
+    url("https://refactoring.guru/images/content-public/windmill-pretty.svg");
+  background-repeat: no-repeat;
+  background-position: 11% 80%, 90% 65%;
+  background-size: 18%;
+  padding-bottom: 100px;
 }
-.container {
-  width: 900px;
-  margin: auto;
+/* .link-group********************************************************************* */
+.link-group {
+  display: flex;
+  width: fit-content;
+  list-style: none;
+  margin: 0 auto 30px;
+  padding: 0 0 0 5px;
+  background-color: #c94538;
+  line-height: 20px;
+  border-radius: 20px;
+  align-items: center;
+  justify-items: center;
 }
+.link-group__item {
+  width: fit-content;
+}
+.link-group__link {
+  display: inline-block;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 8px 3px;
+  transition-duration: 0.15s;
+}
+.link-group__link_last {
+  border-radius: 0 20px 20px 0;
+  padding-right: 16px;
+}
+.link-group__link_selected {
+  background: #b23e33;
+}
+.link-group__link:hover {
+  background: #fff;
+  color: #b23e33;
+}
+.link-group__image {
+  padding: 5px 5px 1px 3px;
+}
+
 .header {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin: auto;
+  width: fit-content;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+}
+
+.double-line {
+  border-bottom: 1px dashed #a81a0d;
+  border-top: 1px dashed #a81a0d;
+  margin: auto;
+  padding-top: 1px;
+}
+.double-line_1 {
+  width: 300px;
+}
+.double-line_2 {
+  width: 160px;
+  margin-bottom: 16px;
+}
+
+.header__h3 {
+  width: 265px;
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin: 10px auto;
   text-align: center;
 }
-.blocks {
-  display: flex;
-  flex-wrap: wrap;
+
+.button {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 12px;
+  outline: none;
+  border: 1px solid white;
+  color: #fff;
+  background: #e04c3e;
+  box-shadow: 1px 1px 2px #a81a0d;
+  transition-duration: 0.15s;
 }
-.block {
-  width: 50%;
-  padding: 16px;
-  color: #333;
-}
-.block__header {
-  font-size: 1.6rem;
-  padding-left: 120px;
-  line-height: 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.block:nth-of-type(1) .block__header {
-  background-image: url(https://refactoring.guru/images/content-public/r1.svg);
-}
-.block:nth-of-type(2) .block__header {
-  background-image: url(https://refactoring.guru/images/content-public/r2.svg);
-}
-.block:nth-of-type(3) .block__header {
-  background-image: url(https://refactoring.guru/images/content-public/r3.svg);
-}
-.block:nth-of-type(4) .block__header {
-  background-image: url(https://refactoring.guru/images/content-public/r4.svg);
-}
-.block__list_item {
-  margin-bottom: 16px;
+.button:hover {
+  color: #e04c3e;
+  background: #fff;
 }
